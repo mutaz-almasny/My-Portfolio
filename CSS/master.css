@@ -1,0 +1,161 @@
+@font-face {
+    font-family: playfair;
+    src: url(/Fonts/static/PlayfairDisplay-Medium.ttf);
+}
+
+* {
+    --main-color-text:white;
+    --main-color-backGround:#071a25; 
+    --secondary-color: #198bc2 ; 
+    padding: 0;
+    margin: 0;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'playfair';
+    color: var(--main-color-text);
+    background-color: var(--main-color-backGround);
+}
+
+a {
+    display: block;
+    color: var(--main-color-text);
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+nav ul a.active{
+    color: var(--secondary-color);
+}
+
+
+nav ul a:hover {
+    color: #059ce5;
+}
+
+section{
+    padding: 2.6rem;
+}
+
+i {
+    color: var(--secondary-color);
+}
+
+
+
+/* common */
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+/* Header Design */
+header {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+ul {
+    width: fit-content;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Introduction Section Design */
+
+#introduction-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#introduction-section .my-photo{
+    height: 250px;
+}
+
+.my-name {
+    color: #339cc3;
+}
+
+.logo img {
+    width: 8.5rem;
+    margin-top: 1rem;
+}
+
+/* About Us Section Design */
+
+#aboutMe-section {
+    text-align: center;
+}
+
+
+/* Our Works Section Design */
+
+.img-works{
+    width: 100%;
+    background-color: #072232;
+    height: 10.5rem;
+    text-align: center;
+}
+
+
+.img-work a {
+    color: var(--secondary-color);
+}
+
+.img-work a:hover{
+    color: #44bcf7 ;
+}
+
+
+
+.imgs-of-works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+.my-work {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+
+
+/* Contact Section */
+
+#Contact-Section .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#Contact-Section .links a i {
+    font-size: 2.5rem;
+}
+
+#Contact-Section .links a i:hover {
+    color: #059ce5;
+    filter: drop-shadow(1px 1px 20px #059ce5 );
+}
+
